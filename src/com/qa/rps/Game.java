@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.logging.Logger;
 
 import com.qa.rps.controller.Move;
+import com.qa.rps.utils.StatMonitor;
 
 public class Game {
 	private boolean humanQuits = false;
@@ -15,6 +16,8 @@ public class Game {
 	private static final Random RANDOM = new Random();
 
 	public static final Logger LOG = Logger.getLogger(Move.class.getName());
+
+	public static final StatMonitor STATS = new StatMonitor();
 
 	public void run() {
 		LOG.info("Welcome to Rock, Paper, Scissors...");
