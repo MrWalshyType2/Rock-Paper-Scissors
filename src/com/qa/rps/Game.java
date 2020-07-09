@@ -6,12 +6,6 @@ import java.util.logging.Logger;
 import com.qa.rps.controller.Move;
 
 public class Game {
-	private int gamesPlayed = 0;
-	private int computerWins = 0;
-	private int humanWins = 0;
-	private int ties = 0;
-	private String mostCommonMove = null;
-
 	private boolean humanQuits = false;
 	private boolean gameOver = false;
 	private String playerMove;
